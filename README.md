@@ -5,44 +5,66 @@ This repository contains end to end data analysis projects from the Google Data 
 
 My first end-to-end data analysis project from the Google Data Analytics Capstone: Case Study 1 – How does a bike-share navigate speedy success?. The project focuses on memory-efficient processing of large datasets, SQL integration, and extracting actionable business insights.
 
- Dataset
 
-Source: Public dataset from Google Data Analytics Certificate
+## Dataset
+- **Source:** Public dataset provided as part of the Google Data Analytics Certificate  
+- **Size:** ~1.2 GB, 14 million rows, 14 columns  
+- **Data Quality Issues:**  
+  - Null values  
+  - Missing necessary columns  
+  - Unnecessary columns  
+  - Incorrect datatypes  
+  - Messy timestamps  
+  - Performance constraints  
 
-Size: ~1.2 GB, 5.55 million rows, 14 columns
+---
 
-Issues: Null values, missing/extra columns, messy timestamps, incorrect datatypes
+## Technical Implementation
+- **Memory Efficiency:** Used `pandas` chunk loading to process large CSVs without exhausting RAM, reducing memory usage from 27 GB to 4.1 GB  
+- **SQLite Integration:** Used SQLite for aggregations and database operations because pandas alone cannot efficiently handle large-scale datasets  
+- **Performance Optimizations:** Removed unnecessary loops, optimized `dtype` usage, separated raw vs processed data to avoid reloading large datasets repeatedly  
+- **Data Cleaning & Transformation:** Handled missing values, converted datatypes, and created new calculated columns  
 
-Technical Implementation
+---
 
-Memory Efficiency: Chunked CSV loading with pandas, reducing RAM usage from 27 GB to 4.1 GB
+## Analysis
+The project answers three key questions:
 
-Database: SQLite used for aggregation and performance, pandas for wrangling and visualization
+### 1. Usage Differences  
+**How annual members and casual riders use Cyclistic bikes differently**
 
-Optimizations: Removed loops, optimized dtypes, separated raw vs processed data
+| Metric                     | Members       | Casual      |
+|----------------------------|---------------|------------|
+| Total Rides                | 3,553,477     | 1,999,488  |
+| Average Ride Duration      | 12.33 mins    | 22.59 mins |
+| Peak Hours & Busiest Days  | Differ between member types | Differ between member types |
+| Ride Type Preference       | Electric bikes | Classic bikes |
 
- Analysis
+### 2. Conversion Potential  
+**Why casual riders might buy annual memberships**
 
-Three main questions:
+- Frequent casual riders spend more per ride than members  
+- Cost-saving opportunities suggest conversion potential  
 
-Usage Differences: Members vs casual riders – total rides, avg duration, peak hours, ride type preference
+### 3. Marketing Strategy  
+**How Cyclistic can use digital media to influence casual riders**
 
-Conversion Potential: Casual riders may save money by switching to annual memberships
+- Promote **cost-saving benefits** of annual membership  
+- Target weekend and leisure-focused riders  
+- Use behavior-based digital advertising campaigns  
 
-Marketing Strategy: Promote cost-saving and weekend-focused campaigns via digital media
+### Visualizations
+- Pie charts  
+- Bar charts  
+- Line charts  
+- Grouped bar charts  
 
-Visualizations: Pie charts, bar charts, line charts using matplotlib, seaborn, plotly
-
- Results & Skills
-
-Insights inform marketing and membership strategy
-
-Demonstrates data cleaning, memory-efficient processing, SQL integration, EDA, visualization, and actionable business insights
-
- Execution
-
-Environment: Jupyter Notebook, Python 3.x
-
-Libraries: numpy, pandas, matplotlib, seaborn, plotly, sqlite3, os
-
-Structure: Raw data in Kaggle VM, processed data via SQLite, step-by-step analysis in notebook
+**Tools Used:**  
+```python
+numpy
+pandas
+matplotlib
+seaborn
+plotly
+sqlite3
+os
