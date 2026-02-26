@@ -1,11 +1,11 @@
 # data-projects
 This repository contains end to end data analysis projects from the Google Data Analytics Capstone and independent work. Focused on large dataset handling, memory efficient processing, SQL integration, and extracting actionable business insights using Python, Pandas, SQLite, and Excel.
 
-Projects Overview
+# Projects Overview
 
 My first end-to-end data analysis project from the Google Data Analytics Capstone: Case Study 1 – How does a bike-share navigate speedy success?. The project focuses on memory-efficient processing of large datasets, SQL integration, and extracting actionable business insights.
 
-Dataset
+# Dataset
 
 Source: Public dataset from Google Data Analytics Certificate
 
@@ -21,7 +21,7 @@ Database: SQLite used for aggregation and performance, pandas for wrangling and 
 
 Optimizations: Removed loops, optimized dtypes, separated raw vs processed data
 
-Analysis
+# Analysis
 
 Three main questions:
 
@@ -33,13 +33,13 @@ Marketing Strategy: Promote cost-saving and weekend-focused campaigns via digita
 
 Visualizations: Pie charts, bar charts, line charts using matplotlib, seaborn, plotly
 
-Results & Skills
+# Results & Skills
 
 Insights inform marketing and membership strategy
 
 Demonstrates data cleaning, memory-efficient processing, SQL integration, EDA, visualization, and actionable business insights
 
-Execution
+# Execution
 
 Environment: Jupyter Notebook, Python 3.x
 
