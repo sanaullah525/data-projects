@@ -30,15 +30,17 @@ My first end-to-end data analysis project from the Google Data Analytics Capston
 ## Analysis
 The project answers three key questions:
 
-### 1. Usage Differences  
-**How annual members and casual riders use Cyclistic bikes differently**
+## 1. Usage Differences  
+### How Annual Members and Casual Riders Use Cyclistic Bikes Differently
 
-| Metric                     | Members       | Casual      |
-|----------------------------|---------------|------------|
-| Total Rides                | 3,553,477     | 1,999,488  |
-| Average Ride Duration      | 12.33 mins    | 22.59 mins |
-| Peak Hours & Busiest Days  | Differ between member types | Differ between member types |
-| Ride Type Preference       | Electric bikes | Classic bikes |
+| Metric                    | Members                         | Casual                          |
+|---------------------------|---------------------------------|----------------------------------|
+| Total Rides               | 3,553,477                       | 1,999,488                        |
+| Average Ride Duration     | 12.33 minutes                   | 22.59 minutes                    |
+| Peak Hours                | 8 AM and 5–6 PM (commute time) | 4–6 PM (late afternoon)          |
+| Busiest Days              | Thursday and Tuesday            | Saturday                         |
+| Weekday vs Weekend Usage  | Heavy weekday usage             | Higher weekend proportion        |
+| Ride Type Preference      | Electric bikes                  | Classic bikes                    |
 
 ### 2. Conversion Potential  
 **Why casual riders might buy annual memberships**
