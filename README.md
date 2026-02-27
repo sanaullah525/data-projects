@@ -62,11 +62,4 @@ The project answers three key questions:
 - Grouped bar charts  
 
 **Tools Used:**  
-```python
-numpy
-pandas
-matplotlib
-seaborn
-plotly
-sqlite3
-os
+`python` `numpy` `pandas` `matplotlib` `seaborn` `plotly` `sqlite3` `os`
